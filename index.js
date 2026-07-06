@@ -66,7 +66,7 @@ function iniciarCliente() {
     authStrategy: new LocalAuth({ clientId: 'aca-chile' }),
     puppeteer: {
       headless: true,
-      executablePath: process.env.PUPPETEER_EXECUTABLE_PATH || undefined,
+      executablePath: process.env.PUPPETEER_EXECUTABLE_PATH || '/usr/bin/chromium',
       protocolTimeout: 60000,
       args: [
         '--no-sandbox',
