@@ -76,7 +76,14 @@ function iniciarCliente() {
         '--disable-software-rasterizer',
         '--disable-extensions',
         '--no-first-run',
-        '--no-default-browser-check'
+        '--no-default-browser-check',
+        '--disable-features=site-per-process,IsolateOrigins',
+        '--renderer-process-limit=1',
+        '--disable-background-networking',
+        '--disable-background-timer-throttling',
+        '--disable-renderer-backgrounding',
+        '--disable-accelerated-2d-canvas',
+        '--mute-audio'
       ]
     }
   });
